@@ -26,16 +26,17 @@ class WelcomeScreen extends StatelessWidget {
                     text: const TextSpan(
                       children: [
                         TextSpan(
-                            text: 'Welcome Back!\n',
+                            text: 'Digital Khalasi\n',
                             style: TextStyle(
                               fontSize: 45.0,
+                              color: Color.fromARGB(255, 53, 100, 218),
                               fontWeight: FontWeight.w600,
                             )),
                         TextSpan(
-                            text:
-                                '\nEnter personal details to your employee account',
+                            text: 'A Bus Fare Collection System\n',
                             style: TextStyle(
                               fontSize: 20,
+                              color: Color.fromARGB(255, 53, 100, 218),
                               // height: 0,
                             ))
                       ],
@@ -43,26 +44,26 @@ class WelcomeScreen extends StatelessWidget {
                   ),
                 ),
               )),
-          Flexible(
+          const Flexible(
             flex: 1,
             child: Align(
               alignment: Alignment.bottomRight,
               child: Row(
                 children: [
-                  const Expanded(
+                  Expanded(
                     child: WelcomeButton(
                       buttonText: 'Sign in',
                       onTap: SignInScreen(),
                       color: Colors.transparent,
-                      textColor: Colors.white,
+                      textColor: Color.fromARGB(255, 53, 100, 218),
                     ),
                   ),
                   Expanded(
                     child: WelcomeButton(
                       buttonText: 'Sign up',
-                      onTap: const SignUpScreen(),
+                      onTap: SignUpScreen(),
                       color: Colors.white,
-                      textColor: lightColorScheme.primary,
+                      textColor: Color.fromARGB(255, 53, 100, 218),
                     ),
                   ),
                 ],
